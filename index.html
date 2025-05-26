@@ -81,13 +81,13 @@
 
             <!-- CTA Buttons -->
             <div class="d-flex justify-content-center flex-wrap">
-              <button class="btn-demo">
+              <a href="#" class="btn-demo">
                 Book a Demo
-              </button>
-              <button class=" btn-video">
+              </a>
+              <a href="#" class=" btn-video">
                 <i class="bi bi-play-fill"></i>
                 Watch a video
-              </button>
+              </a>
             </div>
             <div class="hero-image">
               <img src="assets/img/hero image.avif" alt="">
@@ -104,17 +104,9 @@
     <div class="logo-marquee-container">
       <div class="fade-overlay left"></div>
       <div class="marquee-wrapper">
-        <div class="marquee">
+        <div class="marquee" id="marquee">
+          <!-- Initial marquee group -->
           <div class="marquee-group">
-            <img src="assets/img/2.avif" alt="Client Logo">
-            <img src="assets/img/3.avif" alt="Client Logo">
-            <img src="assets/img/4.avif" alt="Client Logo">
-            <img src="assets/img/5.avif" alt="Client Logo">
-            <img src="assets/img/6.avif" alt="Client Logo">
-            <img src="assets/img/2.avif" alt="Client Logo">
-          </div>
-          <!-- Duplicate for seamless loop -->
-          <div class="marquee-group" aria-hidden="true">
             <img src="assets/img/2.avif" alt="Client Logo">
             <img src="assets/img/3.avif" alt="Client Logo">
             <img src="assets/img/4.avif" alt="Client Logo">
@@ -134,8 +126,8 @@
   <section class="stats-section">
     <div class="container text-center">
       <div class="badge">
-              <i class="bi bi-dot"></i> 1Card Campus Solutions
-            </div>
+        <i class="bi bi-dot"></i> 1Card Campus Solutions
+      </div>
 
       <h2 class="stats-title">Our Results in Numbers</h2>
       <p class="stats-description">
@@ -184,89 +176,213 @@
   </section>
   <!-- End Stats Section -->
 
+
   <!-- App Features Section -->
   <section id="about" class="about section py-5">
-
     <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-      <div class="row gy-4 align-items-center justify-content-between">
-        <!-- header -->
+      <!-- Header -->
+      <div class="row">
         <div class="col-lg-12">
           <div class="section-title text-center">
             <div class="badge">
-              <i class="bi bi-dot"></i> 1Card Campus Solutions
+              <i class="bi bi-dot"></i> Financial Roadblocks
             </div>
             <h2>Struggling with Campus Finances?</h2>
             <p>We get it. 1Card streamlines the process of handling tuition payments, canteen bills, printing costs, and
               more—so you can focus on your education, not your spreadsheets.</p>
           </div>
         </div>
+      </div>
 
-        <div class="col-xl-5" data-aos="fade-up" data-aos-delay="200">
-          <span class="about-meta">MORE ABOUT US</span>
-          <h2 class="about-title">Voluptas enim suscipit temporibus</h2>
-          <p class="about-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
-            beatae vitae dicta sunt explicabo.</p>
-
-          <div class="row feature-list-wrapper">
-            <div class="col-md-6">
-              <ul class="feature-list">
-                <li><i class="bi bi-check-circle-fill"></i> Lorem ipsum dolor sit amet</li>
-                <li><i class="bi bi-check-circle-fill"></i> Consectetur adipiscing elit</li>
-                <li><i class="bi bi-check-circle-fill"></i> Sed do eiusmod tempor</li>
-              </ul>
-            </div>
-            <div class="col-md-6">
-              <ul class="feature-list">
-                <li><i class="bi bi-check-circle-fill"></i> Incididunt ut labore et</li>
-                <li><i class="bi bi-check-circle-fill"></i> Dolore magna aliqua</li>
-                <li><i class="bi bi-check-circle-fill"></i> Ut enim ad minim veniam</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="info-wrapper">
-            <div class="row gy-4">
-              <div class="col-lg-5">
-                <div class="profile d-flex align-items-center gap-3">
-                  <img src="assets/img/avatar-1.webp" alt="CEO Profile" class="profile-image">
-                  <div>
-                    <h4 class="profile-name">Mario Smith</h4>
-                    <p class="profile-position">CEO &amp; Founder</p>
-                  </div>
-                </div>
+      <!-- Feature Content -->
+      <div class="feature-content align-items-center justify-content-between ">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-xl-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-left">
+              <div class="badge">
+                <i class="bi bi-dot"></i> Financial Management
               </div>
-              <div class="col-lg-7">
-                <div class="contact-info d-flex align-items-center gap-2">
-                  <i class="bi bi-telephone-fill"></i>
-                  <div>
-                    <p class="contact-label">Call us anytime</p>
-                    <p class="contact-number">+123 456-789</p>
-                  </div>
-                </div>
+              <h2 class="about-title">Expense Tracking</h2>
+              <p class="about-description">Easily track, categorize, and analyze every campus transaction—tuition fees,
+                canteen bills, printing costs, and more—all in real time, from one unified dashboard.</p>
+              <div class="feature-list-section">
+                <ul class="feature-list row gap-3">
+                  <li class="col-12 col-md-6 feature-item"><i class="bi bi-check-circle-fill"></i>Real-Time Updates</li>
+                  <li class="col-12 col-md-6 feature-item"><i class="bi bi-check-circle-fill"></i>Automatic
+                    Categorization</li>
+                  <li class="col-12 col-md-6 feature-item"><i class="bi bi-check-circle-fill"></i>Unified Account View
+                  </li>
+                  <li class="col-12 col-md-6 feature-item"><i class="bi bi-check-circle-fill"></i>Detailed Spending
+                    Insights</li>
+                </ul>
+              </div>
+              <div class="about-btn">
+                <a href="#" class="">Read More About This</a>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="col-xl-6" data-aos="fade-up" data-aos-delay="300">
-          <div class="image-wrapper">
-            <div class="images position-relative" data-aos="zoom-out" data-aos-delay="400">
-              <img src="assets/img/about-5.webp" alt="Business Meeting" class="img-fluid main-image rounded-4">
-              <img src="assets/img/about-2.webp" alt="Team Discussion" class="img-fluid small-image rounded-4">
-            </div>
-            <div class="experience-badge floating">
-              <h3>15+ <span>Years</span></h3>
-              <p>Of experience in business service</p>
+          <div class="col-xl-5">
+            <div class="feature-right">
+              <img src="./assets/img/Financial Roadblocks.svg" alt="Expense Tracking" class="img-fluid">
             </div>
           </div>
         </div>
       </div>
 
-    </div>
+      <!-- Feature Content 2 -->
+      <div class="feature-content align-items-center justify-content-between">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-xl-5">
+            <div class="feature-right">
+              <img src="./assets/img/Financial Roadblocks.svg" alt="Expense Tracking" class="img-fluid">
+            </div>
+          </div>
 
-  </section><!-- /About Section -->
+          <div class="col-xl-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-left">
+              <div class="badge">
+                <i class="bi bi-dot"></i> Financial Management
+              </div>
+              <h2 class="about-title">Seamless Service Integration</h2>
+              <p class="about-description">Link all your campus services—such as canteen, gym, parking, and event
+                management—under one system. With 1Card, you don’t need separate logins or payment methods for each
+                service.</p>
+              <div class="feature-list-section">
+                <ul class="feature-list row gap-3">
+                  <li class="col-12 col-md-6 feature-item"><i class="bi bi-check-circle-fill"></i>Canteen & Food
+                    Services</li>
+                  <li class="col-12 col-md-6 feature-item"><i class="bi bi-check-circle-fill"></i>Printing & Photocopy
+                  </li>
+                  <li class="col-12 col-md-6 feature-item"><i class="bi bi-check-circle-fill"></i>Parking & Access
+                    Control</li>
+                  <li class="col-12 col-md-6 feature-item"><i class="bi bi-check-circle-fill"></i>Real-Time
+                    Synchronization</li>
+                </ul>
+              </div>
+              <div class="about-btn">
+                <a href="#" class="">Read More About This</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature Content 3 -->
+      <div class="feature-content">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-xl-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-left">
+              <div class="badge">
+                <i class="bi bi-dot"></i> Financial Management
+              </div>
+              <h2 class="about-title">Flexible Payment Options</h2>
+              <p class="about-description">Whether you’re recharging your 1Card balance or paying tuition, we offer a
+                variety of convenient, cashless solutions to keep you moving on campus.</p>
+              <div class="feature-list-section">
+                <ul class="feature-list row gap-3">
+                  <li class="col-12 col-md-6 feature-item"><i class="bi bi-check-circle-fill"></i>Top-Up Convenience
+                  </li>
+                  <li class="col-12 col-md-6 feature-item"><i class="bi bi-check-circle-fill"></i>Credit-Based Services
+                  </li>
+                  <li class="col-12 col-md-6 feature-item"><i class="bi bi-check-circle-fill"></i>Instant Payment
+                    Confirmation</li>
+                  <li class="col-12 col-md-6 feature-item"><i class="bi bi-check-circle-fill"></i>Visual Spending Alerts
+                  </li>
+                </ul>
+              </div>
+              <div class="about-btn">
+                <a href="#" class="">Read More About This</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-5">
+            <div class="feature-right">
+              <img src="./assets/img/Financial Roadblocks.svg" alt="Expense Tracking" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+  </section>
+  <!-- App Features Section -->
+
+  <!-- Smart Savings Section  -->
+  <section>
+    <div class="container text-center">
+      <div class="section-title">
+        <div class="badge">
+          <i class="bi bi-dot"></i> Smart Savings
+        </div>
+        <h2>Optimize Your Campus Journey</h2>
+        <p class="stats-description"> Whether it’s paying tuition or topping up your 1Card balance, we’ll help you get
+          there faster. </p>
+      </div>
+
+      <!-- Feature Cards -->
+      <div class="row g-4">
+        <!-- Tuition Fees Payment Service -->
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-card">
+            <i class="bi bi-arrow-up-right-circle-fill arrow-icon"></i>
+            <div class="icon-placeholder">Tuition Fees Image</div>
+            <h3>Tuition Fees Payment Service</h3>
+            <p>Set and manage all your campus fee targets in one place. From tuition to library fines, stay on track
+              with simple, intuitive goal-setting.</p>
+          </div>
+        </div>
+
+        <!-- Smart Payment Options -->
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-card">
+            <i class="bi bi-arrow-up-right-circle-fill arrow-icon"></i>
+            <div class="icon-placeholder">Smart Payment Image</div>
+            <h3>Smart Payment Options</h3>
+            <p>Enjoy flexible payment methods—DPAY, QR code, or credit-based services—so you can choose what fits your
+              routine best.</p>
+          </div>
+        </div>
+
+        <!-- Hassle-Free Top-Ups -->
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-card">
+            <i class="bi bi-arrow-up-right-circle-fill arrow-icon"></i>
+            <div class="icon-placeholder">Top-Ups Image</div>
+            <h3>Hassle-Free Top-Ups</h3>
+            <p>Instantly recharge your 1Card from anywhere—no more long queues or searching for spare change.</p>
+          </div>
+        </div>
+
+        <!-- Automated Fee Transfers -->
+        <div class="col-lg-6 col-md-6">
+          <div class="feature-card">
+            <i class="bi bi-arrow-up-right-circle-fill arrow-icon"></i>
+            <div class="icon-placeholder">Fee Transfers Image</div>
+            <h3>Automated Fee Transfers</h3>
+            <p>Schedule recurring payments for tuition or other regular fees. Focus on your studies, and let 1Card
+              handle the deadlines.</p>
+          </div>
+        </div>
+
+        <!-- Event & Access Management -->
+        <div class="col-lg-6 col-md-12">
+          <div class="feature-card">
+            <i class="bi bi-arrow-up-right-circle-fill arrow-icon"></i>
+            <div class="icon-placeholder">Event Access Image</div>
+            <h3>Event & Access Management</h3>
+            <p>Use 1Card for secure facility access, event registrations, and parking management—all through a single,
+              convenient system.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
 
   <!-- Features Section -->
   <section id="features" class="features section">
@@ -387,274 +503,9 @@
 
     </div>
 
-  </section><!-- /Features Section -->
+  </section>
+  <!-- /Features Section -->
 
-  <!-- Features Cards Section -->
-  <section id="features-cards" class="features-cards section">
-
-    <div class="container">
-
-      <div class="row gy-4">
-
-        <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
-          <div class="feature-box orange">
-            <i class="bi bi-award"></i>
-            <h4>Corporis voluptates</h4>
-            <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-          </div>
-        </div><!-- End Feature Borx-->
-
-        <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-          <div class="feature-box blue">
-            <i class="bi bi-patch-check"></i>
-            <h4>Explicabo consectetur</h4>
-            <p>Est autem dicta beatae suscipit. Sint veritatis et sit quasi ab aut inventore</p>
-          </div>
-        </div><!-- End Feature Borx-->
-
-        <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-          <div class="feature-box green">
-            <i class="bi bi-sunrise"></i>
-            <h4>Ullamco laboris</h4>
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-          </div>
-        </div><!-- End Feature Borx-->
-
-        <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
-          <div class="feature-box red">
-            <i class="bi bi-shield-check"></i>
-            <h4>Labore consequatur</h4>
-            <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-          </div>
-        </div><!-- End Feature Borx-->
-
-      </div>
-
-    </div>
-
-  </section><!-- /Features Cards Section -->
-
-  <!-- Features 2 Section -->
-  <section id="features-2" class="features-2 section">
-
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-      <div class="row align-items-center">
-
-        <div class="col-lg-4">
-
-          <div class="feature-item text-end mb-5" data-aos="fade-right" data-aos-delay="200">
-            <div class="d-flex align-items-center justify-content-end gap-4">
-              <div class="feature-content">
-                <h3>Use On Any Device</h3>
-                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui
-                  quis mi consectetuer lacinia.</p>
-              </div>
-              <div class="feature-icon flex-shrink-0">
-                <i class="bi bi-display"></i>
-              </div>
-            </div>
-          </div><!-- End .feature-item -->
-
-          <div class="feature-item text-end mb-5" data-aos="fade-right" data-aos-delay="300">
-            <div class="d-flex align-items-center justify-content-end gap-4">
-              <div class="feature-content">
-                <h3>Feather Icons</h3>
-                <p>Phasellus ullamcorper ipsum rutrum nunc nunc nonummy metus vestibulum volutpat sapien arcu sed augue
-                  aliquam erat volutpat.</p>
-              </div>
-              <div class="feature-icon flex-shrink-0">
-                <i class="bi bi-feather"></i>
-              </div>
-            </div>
-          </div><!-- End .feature-item -->
-
-          <div class="feature-item text-end" data-aos="fade-right" data-aos-delay="400">
-            <div class="d-flex align-items-center justify-content-end gap-4">
-              <div class="feature-content">
-                <h3>Retina Ready</h3>
-                <p>Aenean tellus metus bibendum sed posuere ac mattis non nunc vestibulum fringilla purus sit amet
-                  fermentum aenean commodo.</p>
-              </div>
-              <div class="feature-icon flex-shrink-0">
-                <i class="bi bi-eye"></i>
-              </div>
-            </div>
-          </div><!-- End .feature-item -->
-
-        </div>
-
-        <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
-          <div class="phone-mockup text-center">
-            <img src="assets/img/phone-app-screen.webp" alt="Phone Mockup" class="img-fluid">
-          </div>
-        </div><!-- End Phone Mockup -->
-
-        <div class="col-lg-4">
-
-          <div class="feature-item mb-5" data-aos="fade-left" data-aos-delay="200">
-            <div class="d-flex align-items-center gap-4">
-              <div class="feature-icon flex-shrink-0">
-                <i class="bi bi-code-square"></i>
-              </div>
-              <div class="feature-content">
-                <h3>W3c Valid Code</h3>
-                <p>Donec vitae sapien ut libero venenatis faucibus nullam quis ante etiam sit amet orci eget eros
-                  faucibus tincidunt.</p>
-              </div>
-            </div>
-          </div><!-- End .feature-item -->
-
-          <div class="feature-item mb-5" data-aos="fade-left" data-aos-delay="300">
-            <div class="d-flex align-items-center gap-4">
-              <div class="feature-icon flex-shrink-0">
-                <i class="bi bi-phone"></i>
-              </div>
-              <div class="feature-content">
-                <h3>Fully Responsive</h3>
-                <p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet adipiscing sem neque
-                  sed ipsum.</p>
-              </div>
-            </div>
-          </div><!-- End .feature-item -->
-
-          <div class="feature-item" data-aos="fade-left" data-aos-delay="400">
-            <div class="d-flex align-items-center gap-4">
-              <div class="feature-icon flex-shrink-0">
-                <i class="bi bi-browser-chrome"></i>
-              </div>
-              <div class="feature-content">
-                <h3>Browser Compatibility</h3>
-                <p>Nullam dictum felis eu pede mollis pretium integer tincidunt cras dapibus vivamus elementum semper
-                  nisi aenean vulputate.</p>
-              </div>
-            </div>
-          </div><!-- End .feature-item -->
-
-        </div>
-      </div>
-
-    </div>
-
-  </section><!-- /Features 2 Section -->
-
-  <!-- Call To Action Section -->
-  <section id="call-to-action" class="call-to-action section">
-
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-      <div class="row content justify-content-center align-items-center position-relative">
-        <div class="col-lg-8 mx-auto text-center">
-          <h2 class="display-4 mb-4">Maecenas tempus tellus eget condimentum</h2>
-          <p class="mb-4">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec
-            velit neque, auctor sit amet aliquam vel</p>
-          <a href="#" class="btn btn-cta">Call To Action</a>
-        </div>
-
-        <!-- Abstract Background Elements -->
-        <div class="shape shape-1">
-          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M47.1,-57.1C59.9,-45.6,68.5,-28.9,71.4,-10.9C74.2,7.1,71.3,26.3,61.5,41.1C51.7,55.9,35,66.2,16.9,69.2C-1.3,72.2,-21,67.8,-36.9,57.9C-52.8,48,-64.9,32.6,-69.1,15.1C-73.3,-2.4,-69.5,-22,-59.4,-37.1C-49.3,-52.2,-32.8,-62.9,-15.7,-64.9C1.5,-67,34.3,-68.5,47.1,-57.1Z"
-              transform="translate(100 100)"></path>
-          </svg>
-        </div>
-
-        <div class="shape shape-2">
-          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M41.3,-49.1C54.4,-39.3,66.6,-27.2,71.1,-12.1C75.6,3,72.4,20.9,63.3,34.4C54.2,47.9,39.2,56.9,23.2,62.3C7.1,67.7,-10,69.4,-24.8,64.1C-39.7,58.8,-52.3,46.5,-60.1,31.5C-67.9,16.4,-70.9,-1.4,-66.3,-16.6C-61.8,-31.8,-49.7,-44.3,-36.3,-54C-22.9,-63.7,-8.2,-70.6,3.6,-75.1C15.4,-79.6,28.2,-58.9,41.3,-49.1Z"
-              transform="translate(100 100)"></path>
-          </svg>
-        </div>
-
-        <!-- Dot Pattern Groups -->
-        <div class="dots dots-1">
-          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-            <pattern id="dot-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-              <circle cx="2" cy="2" r="2" fill="currentColor"></circle>
-            </pattern>
-            <rect width="100" height="100" fill="url(#dot-pattern)"></rect>
-          </svg>
-        </div>
-
-        <div class="dots dots-2">
-          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-            <pattern id="dot-pattern-2" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-              <circle cx="2" cy="2" r="2" fill="currentColor"></circle>
-            </pattern>
-            <rect width="100" height="100" fill="url(#dot-pattern-2)"></rect>
-          </svg>
-        </div>
-
-        <div class="shape shape-3">
-          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M43.3,-57.1C57.4,-46.5,71.1,-32.6,75.3,-16.2C79.5,0.2,74.2,19.1,65.1,35.3C56,51.5,43.1,65,27.4,71.7C11.7,78.4,-6.8,78.3,-23.9,72.4C-41,66.5,-56.7,54.8,-65.4,39.2C-74.1,23.6,-75.8,4,-71.7,-13.2C-67.6,-30.4,-57.7,-45.2,-44.3,-56.1C-30.9,-67,-15.5,-74,0.7,-74.9C16.8,-75.8,33.7,-70.7,43.3,-57.1Z"
-              transform="translate(100 100)"></path>
-          </svg>
-        </div>
-      </div>
-
-    </div>
-
-  </section><!-- /Call To Action Section -->
-
-  <!-- Clients Section -->
-  <section id="clients" class="clients section">
-
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-      <div class="swiper init-swiper">
-        <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 2,
-                  "spaceBetween": 40
-                },
-                "480": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 60
-                },
-                "640": {
-                  "slidesPerView": 4,
-                  "spaceBetween": 80
-                },
-                "992": {
-                  "slidesPerView": 6,
-                  "spaceBetween": 120
-                }
-              }
-            }
-          </script>
-        <div class="swiper-wrapper align-items-center">
-          <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-
-    </div>
-
-  </section><!-- /Clients Section -->
 
   <!-- Testimonials Section -->
   <section id="testimonials" class="testimonials section light-background">
@@ -791,81 +642,6 @@
     </div>
 
   </section><!-- /Stats Section -->
-
-  <!-- Services Section -->
-  <section id="services" class="services section light-background">
-
-    <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-      <h2>Services</h2>
-      <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-    </div><!-- End Section Title -->
-
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-      <div class="row g-4">
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="service-card d-flex">
-            <div class="icon flex-shrink-0">
-              <i class="bi bi-activity"></i>
-            </div>
-            <div>
-              <h3>Nesciunt Mete</h3>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis
-                tempore et consequatur.</p>
-              <a href="service-details.html" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-        </div><!-- End Service Card -->
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="service-card d-flex">
-            <div class="icon flex-shrink-0">
-              <i class="bi bi-diagram-3"></i>
-            </div>
-            <div>
-              <h3>Eosle Commodi</h3>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut
-                nesciunt dolorem.</p>
-              <a href="service-details.html" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-        </div><!-- End Service Card -->
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-          <div class="service-card d-flex">
-            <div class="icon flex-shrink-0">
-              <i class="bi bi-easel"></i>
-            </div>
-            <div>
-              <h3>Ledo Markt</h3>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci
-                eos earum corrupti.</p>
-              <a href="service-details.html" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-        </div><!-- End Service Card -->
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-          <div class="service-card d-flex">
-            <div class="icon flex-shrink-0">
-              <i class="bi bi-clipboard-data"></i>
-            </div>
-            <div>
-              <h3>Asperiores Commodit</h3>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident
-                adipisci neque.</p>
-              <a href="service-details.html" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-        </div><!-- End Service Card -->
-
-      </div>
-
-    </div>
-
-  </section><!-- /Services Section -->
 
   <!-- Pricing Section -->
   <section id="pricing" class="pricing section light-background">
@@ -1085,122 +861,6 @@
     </div>
   </section><!-- /Faq Section -->
 
-  <!-- Call To Action 2 Section -->
-  <section id="call-to-action-2" class="call-to-action-2 section dark-background">
-
-    <div class="container">
-      <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
-        <div class="col-xl-10">
-          <div class="text-center">
-            <h3>Call To Action</h3>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-              laborum.</p>
-            <a class="cta-btn" href="#">Call To Action</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </section><!-- /Call To Action 2 Section -->
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact section light-background">
-
-    <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-      <h2>Contact</h2>
-      <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-    </div><!-- End Section Title -->
-
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-      <div class="row g-4 g-lg-5">
-        <div class="col-lg-5">
-          <div class="info-box" data-aos="fade-up" data-aos-delay="200">
-            <h3>Contact Info</h3>
-            <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.</p>
-
-            <div class="info-item" data-aos="fade-up" data-aos-delay="300">
-              <div class="icon-box">
-                <i class="bi bi-geo-alt"></i>
-              </div>
-              <div class="content">
-                <h4>Our Location</h4>
-                <p>A108 Adam Street</p>
-                <p>New York, NY 535022</p>
-              </div>
-            </div>
-
-            <div class="info-item" data-aos="fade-up" data-aos-delay="400">
-              <div class="icon-box">
-                <i class="bi bi-telephone"></i>
-              </div>
-              <div class="content">
-                <h4>Phone Number</h4>
-                <p>+1 5589 55488 55</p>
-                <p>+1 6678 254445 41</p>
-              </div>
-            </div>
-
-            <div class="info-item" data-aos="fade-up" data-aos-delay="500">
-              <div class="icon-box">
-                <i class="bi bi-envelope"></i>
-              </div>
-              <div class="content">
-                <h4>Email Address</h4>
-                <p>info@example.com</p>
-                <p>contact@example.com</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-7">
-          <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
-            <h3>Get In Touch</h3>
-            <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.</p>
-
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
-              data-aos-delay="200">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-
-                <div class="col-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit" class="btn">Send Message</button>
-                </div>
-
-              </div>
-            </form>
-
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section><!-- /Contact Section -->
-
 
   <footer id="footer" class="footer">
 
@@ -1298,6 +958,19 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    // JavaScript to duplicate marquee content for seamless infinite loop
+    const marquee = document.getElementById('marquee');
+    const marqueeGroup = marquee.querySelector('.marquee-group');
+
+    // Duplicate the marquee-group content multiple times to ensure seamless looping
+    for (let i = 0; i < 2; i++) {
+      const clone = marqueeGroup.cloneNode(true);
+      clone.setAttribute('aria-hidden', 'true');
+      marquee.appendChild(clone);
+    }
+  </script>
 
 </body>
 
