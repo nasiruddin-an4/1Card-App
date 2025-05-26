@@ -676,6 +676,27 @@ section,
   justify-content: center;
   text-align: center;
 }
+.hero-badge i {
+  color: green;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.badge {
+  display: inline-block;
+  background: #fbbf24;
+  color: #0f1729;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.badge i {
+  color: green;
+  font-size: 18px;
+  font-weight: 700;
+}
 
 .hero-title {
   margin-bottom: 35px;
@@ -687,13 +708,6 @@ section,
   font-size: 18px;
   line-height: 1.6;
 }
-
-.hero-badge i {
-  color: green;
-  font-size: 18px;
-  font-weight: 700;
-}
-
 .hero-title {
   font-size: 3.5rem;
   font-weight: 500;
@@ -1704,17 +1718,6 @@ section,
 }
 
 
-.stats-badge {
-  display: inline-block;
-  background: #fbbf24;
-  color: #0f1729;
-  padding: 8px 18px;
-  border-radius: 20px;
-  font-size: 14px;
-  font-weight: 600;
-  margin-bottom: 25px;
-}
-
 .stats-title {
   color: #ffffff;
   font-size: 3.5rem;
@@ -1736,11 +1739,12 @@ section,
 
 
 .stats-card {
-  background-color: #000; /* Base background */
-  background-image:
-    radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.05) 1px, transparent 0); /* Soft white dots */
-  background-size: 20px 20px;
-  border: 1px solid white; /* Softer border */
+  background-image: 
+    radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.05) 1px, transparent 0),
+    linear-gradient(to right, #1d1d1d, #443f3f);
+  background-size: 20px 20px, cover;
+  background-repeat: repeat, no-repeat;
+  border: 1px solid white;
   border-radius: 16px;
   padding: 35px 30px;
   text-align: left;
@@ -1751,13 +1755,15 @@ section,
 }
 
 .stats-card:hover {
-  background-color: #0a0a0a;
-  background-image:
-    radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.08) 1px, transparent 0);
-  background-size: 20px 20px;
+  background-image: 
+    radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.08) 1px, transparent 0),
+    linear-gradient(to right, #1b1818, #311f1f);
+  background-size: 20px 20px, cover;
+  background-repeat: repeat, no-repeat;
   box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
   transform: translateY(-2px);
 }
+
 
 
 .stats-number {
@@ -1846,3 +1852,5 @@ section,
 .app-features{
   padding: 80px 0px;
 }
+
+
