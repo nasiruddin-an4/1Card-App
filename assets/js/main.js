@@ -166,4 +166,12 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+
+  document.querySelectorAll('.accordion-button').forEach(button => {
+    button.addEventListener('click', () => {
+      const icon = button.querySelector('.accordion-icon');
+      icon.textContent = button.classList.contains('collapsed') ? '+' : '-';
+    });
+  });
+
 })();

@@ -1674,3 +1674,220 @@ section,
     text-align: center;
   }
 }
+
+
+/* Download Section  */
+.download-content {
+  position: relative;
+  border-radius: 10px;
+  border: 0;
+  overflow: hidden;
+  z-index: 1;
+  color: #fff;
+}
+.download-content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgb(1, 79, 151); /* Light blue background */
+  z-index: -2;
+}
+.download-content::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('https://framerusercontent.com/images/wGAHOWhVswEtWkOKTJN6s2CW0.svg');
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 38.4px auto;
+  z-index: -1;
+  opacity: 0.05;
+}
+.phone-img {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+}
+.download-text h2 {
+  font-size: 2.5em;
+  font-weight: 600;
+  max-width: 400px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+.download-text p {
+  font-size: 1.1em;
+  color: #d1d5db;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+.download-buttons .btn {
+  display: inline-block;
+  padding: 12px 70px;
+  margin: 0 10px 10px;
+  font-size: 1em;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.5s ease;
+}
+.btn-app-store {
+  background-color: #ffffff;
+  color: black;
+  transition: transform 0.5s ease;
+}
+.btn-app-store:hover {
+  transform: scale(1.05);
+  background-color: #ffffff;
+  color: #000;
+  border: none;
+}
+.btn-google-play {
+  background-color: #fff;
+  color: black;
+  transition: transform 0.5s ease;
+}
+.btn-google-play:hover {
+  transform: scale(1.05);
+  background-color: #ffffff;
+  border: none;
+  color: black;
+}
+@media (max-width: 767.98px) {
+  .download-section {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .phone-img {
+    max-width: 200px;
+    margin: 0 auto 30px;
+  }
+  .download-text h2 {
+    font-size: 2em;
+  }
+  .download-text p {
+    font-size: 1em;
+  }
+  .download-buttons .btn {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
+}
+
+
+
+ /* ================= FAQ CSS  =============== */
+
+
+.faq-header {
+  color: #212529;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.faq-description {
+  color: #6c757d;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.contact-prompt {
+  color: #6c757d;
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+}
+
+.contact-btn {
+  background-color: #0066cc;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+.contact-btn:hover {
+  background-color: #0052a3;
+  color: white;
+}
+
+.accordion-button {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #212529;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 12px !important;
+  padding: 2rem 2rem 2rem 3.5rem;
+  text-align: left;
+  position: relative;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #ffffff;
+  color: #212529;
+}
+
+.accordion-button:focus {
+  border-color: transparent;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.12);
+  border: none;
+}
+
+
+
+.accordion-button::before {
+  content: '';
+  position: absolute;
+  left: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.2rem;
+  height: 1.2rem;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M8 1a.5.5 0 0 1 .5.5v6h6a.5.5 0 0 1 0 1h-6v6a.5.5 0 0 1-1 0v-6h-6a.5.5 0 0 1 0-1h6v-6A.5.5 0 0 1 8 1z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.2s ease;
+}
+
+.accordion-button:not(.collapsed)::before {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8z'/%3e%3c/svg%3e");
+}
+
+.accordion-button::after {
+  display: none;
+}
+
+.accordion-body {
+  color: #787e85;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.6;
+  padding: 1rem 2rem 2rem 3.5rem;
+  background-color: #ffffff;
+  margin-top: -1px;
+  border-radius: 10px;
+}
+
+.accordion-item {
+  border: none;
+  margin-bottom: 1rem;
+  border-radius: 10px !important;
+}
+
+.accordion-item:last-child {
+  margin-bottom: 0;
+}
+
+.accordion-collapse {
+  border: none;
+  border-radius: 0 0 12px 12px;
+}
