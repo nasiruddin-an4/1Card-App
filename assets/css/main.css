@@ -404,11 +404,13 @@ a:hover {
 # Global Footer
 --------------------------------------------------------------*/
 footer {
-  background-color: #fff; /* White background */
+  background-color: #fff;
+  /* White background */
   color: #333;
   padding: 60px 0;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
+
 .footer-logo {
   width: 120px;
   display: flex;
@@ -416,23 +418,28 @@ footer {
   font-weight: 600;
   margin-bottom: 20px;
 }
+
 .footer-info p {
   font-size: 0.95em;
   color: #666;
   margin-bottom: 10px;
   max-width: 200px;
 }
+
 .footer-info a {
   color: #666;
   text-decoration: none;
   transition: color 0.3s ease;
 }
+
 .footer-info a:hover {
   color: #0062ff;
 }
+
 .social-icons {
   margin-top: 20px;
 }
+
 .social-icons a {
   font-size: 1.5em;
   margin-right: 15px;
@@ -440,43 +447,52 @@ footer {
   border-radius: 50px !important;
   padding: 6px !important;
 }
+
 .social-icons a:hover {
   color: #0062ff;
   transform: translateY(-3px);
 }
+
 .footer-links h5 {
   font-size: 1.1em;
   font-weight: 600;
   margin-bottom: 20px;
   color: #333;
 }
+
 .footer-links ul {
   list-style: none;
   padding: 0;
 }
+
 .footer-links ul li {
   margin-bottom: 10px;
 }
+
 .footer-links ul li a {
   color: #666;
   text-decoration: none;
   font-size: 0.9em;
   transition: color 0.3s ease;
 }
+
 .footer-links ul li a:hover {
   color: #000000;
 }
+
 .download-app h5 {
   font-size: 1.1em;
   font-weight: 600;
   margin-bottom: 20px;
   color: #333;
 }
+
 .download-app p {
   font-size: 0.95em;
   color: #666;
   margin-bottom: 20px;
 }
+
 .download-app .btn-app {
   display: block;
   width: 100%;
@@ -487,9 +503,11 @@ footer {
   transition: background-color 0.3s ease, transform 0.2s ease;
   text-align: center;
 }
+
 .download-app .btn-app i {
   margin-right: 10px;
 }
+
 .footer-bottom {
   border-top: 1px solid #e0e0e0;
   padding-top: 20px;
@@ -497,20 +515,28 @@ footer {
   color: #666;
   font-size: 0.9em;
 }
+
 @media (max-width: 767.98px) {
-  .footer-info, .footer-links, .download-app {
+
+  .footer-info,
+  .footer-links,
+  .download-app {
     text-align: center;
     margin-bottom: 30px;
   }
+
   .social-icons {
     text-align: center;
   }
+
   .footer-logo {
     margin: 0 auto 20px;
   }
+
   .download-app {
     text-align: center;
   }
+
   .col-md-6 {
     flex: 0 0 50%;
     max-width: 50%;
@@ -798,9 +824,14 @@ section,
 /*--------------------------------------------------------------
 # App Features Section
 --------------------------------------------------------------*/
-.feature-content{
+.smartSavings {
+  padding: 5rem 0;
+}
+
+.feature-content {
   padding: 80px 0px;
 }
+
 .feature-left h2 {
   font-size: 2em;
   margin-bottom: 10px;
@@ -912,57 +943,89 @@ section,
 
 /* Features Card  */
 .feature-card {
-      background: #fff;
-      border-radius: 10px;
-      padding: 20px;
-      height: 100%;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      position: relative;
-      transition: transform 0.3s ease;
-      cursor: pointer;
-    }
-    .feature-card:hover {
-      transform: scale(1.02); /* Slight scale on hover */
-    }
-    .feature-card .arrow-icon {
-      position: absolute;
-      top: 20px;
-      right: 30px;
-      font-size: 1.5em;
-      color: #c2c2c2;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
-    .feature-card:hover .arrow-icon {
-      opacity: 1;
-    }
-    .feature-card h3 {
-      font-size: 1.25em;
-      margin-bottom: 10px;
-    }
-    .feature-card p {
-      font-size: 0.95em;
-      color: #666;
-      margin-bottom: 0;
-    }
-    .feature-card .icon-placeholder {
-      width: 100%;
-      height: 150px;
-      background-color: #e6f0fa;
-      border-radius: 8px;
-      margin-bottom: 15px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.5em;
-      color: #666;
-    }
-    /* Unique background colors for each card */
-    .feature-card:nth-child(1) { background: #e6f0fa; } /* Light blue for Tuition Fees */
-    .feature-card:nth-child(2) { background: #f5e8ff; } /* Light purple for Smart Payment */
-    .feature-card:nth-child(3) { background: #fff3e6; } /* Light orange for Hassle-Free Top-Ups */
-    .feature-card:nth-child(4) { background: #e6ffe6; } /* Light green for Automated Fee Transfers */
-    .feature-card:nth-child(5) { background: #f0e6ff; } /* Light purple for Event & Access Management */
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  height: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.feature-card:hover {
+  transform: scale(1.02);
+  /* Slight scale on hover */
+}
+
+.feature-card .arrow-icon {
+  position: absolute;
+  top: 20%;
+  right: 50px;
+  font-size: 1.5em;
+  color: #fcfcfc;
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: opacity 0.3s ease, top 0.3s ease, right 0.3s ease, transform 0.3s ease;
+}
+
+.feature-card:hover .arrow-icon {
+  opacity: 1;
+  top: 10px;
+  right: 20px;
+  transform: translateY(0);
+}
+
+.feature-card h3 {
+  font-size: 1.25em;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 0.95em;
+  color: #666;
+  margin-bottom: 0;
+}
+
+.feature-card .icon-placeholder {
+  width: 100%;
+  height: 150px;
+  background-color: #e6f0fa;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  color: #666;
+}
+
+/* Unique background colors for each card */
+.feature-card:nth-child(1) {
+  background: #e6f0fa;
+}
+
+/* Light blue for Tuition Fees */
+.feature-card:nth-child(2) {
+  background: #f5e8ff;
+}
+
+/* Light purple for Smart Payment */
+.feature-card:nth-child(3) {
+  background: #fff3e6;
+}
+
+/* Light orange for Hassle-Free Top-Ups */
+.feature-card:nth-child(4) {
+  background: #e6ffe6;
+}
+
+/* Light green for Automated Fee Transfers */
+.feature-card:nth-child(5) {
+  background: #f0e6ff;
+}
+
+/* Light purple for Event & Access Management */
 
 /*--------------------------------------------------------------
 # Call To Action Section
@@ -1584,31 +1647,36 @@ section,
 
 
 /* Blog Section  */
-.blog{
+.blog {
   padding: 100px 0px;
 }
+
 .article-card {
   border-radius: 12px;
   overflow: hidden;
   transition: transform 0.3s ease;
-  position: relative; 
+  position: relative;
   display: flex;
   flex-direction: column;
 }
+
 .article-card:hover {
-  transform: scale(1.02); 
+  transform: scale(1.02);
 }
+
 .article-card .card-img {
   height: 250px;
   position: relative;
   overflow: hidden;
 }
+
 .article-card .card-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 10px; 
+  border-radius: 10px;
 }
+
 .article-card .arrow-icon {
   position: absolute;
   top: 20%;
@@ -1619,11 +1687,12 @@ section,
   transform: translateY(-50%);
   transition: opacity 0.3s ease, top 0.3s ease, right 0.3s ease, transform 0.3s ease;
 }
+
 .article-card:hover .arrow-icon {
-  opacity: 1; 
-  top: 10px; 
-  right: 20px; 
-  transform: translateY(0); 
+  opacity: 1;
+  top: 10px;
+  right: 20px;
+  transform: translateY(0);
 }
 
 .article-card .card-body {
@@ -1632,16 +1701,19 @@ section,
   display: flex;
   flex-direction: column;
 }
+
 .article-card .card-title {
   font-size: 1em;
   font-weight: 600;
   color: #222;
   margin-bottom: 10px;
 }
+
 .article-card .card-date {
   font-size: 0.9em;
   color: #666;
 }
+
 .btn-view-all {
   display: inline-block;
   padding: 12px 30px;
@@ -1652,23 +1724,32 @@ section,
   font-weight: 600;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
 .btn-view-all:hover {
   background-color: #0056b3;
   transform: translateY(-2px);
 }
+
 @media (max-width: 767.98px) {
   .section-title h2 {
     font-size: 2em;
   }
+
   .article-card {
-    height: auto; /* Allow height to adjust on smaller screens */
+    height: auto;
+    /* Allow height to adjust on smaller screens */
   }
+
   .article-card .card-img {
-    height: 150px; /* Fixed height for smaller screens */
+    height: 150px;
+    /* Fixed height for smaller screens */
   }
+
   .article-card .card-img img {
-    height: 100%; /* Ensure image takes full height of container */
+    height: 100%;
+    /* Ensure image takes full height of container */
   }
+
   .btn-view-all {
     width: 100%;
     text-align: center;
@@ -1677,9 +1758,10 @@ section,
 
 
 /* Download Section  */
-.download-section{
+.download-section {
   padding-top: 150px;
 }
+
 .download-content {
   position: relative;
   border-radius: 10px;
@@ -1688,13 +1770,16 @@ section,
   z-index: 1;
   color: #fff;
 }
+
 .download-content::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgb(1, 79, 151); /* Light blue background */
+  background-color: rgb(1, 79, 151);
+  /* Light blue background */
   z-index: -2;
 }
+
 .download-content::after {
   content: "";
   position: absolute;
@@ -1706,11 +1791,13 @@ section,
   z-index: -1;
   opacity: 0.05;
 }
+
 .phone-img {
   width: 100%;
   max-width: 1200px;
   height: auto;
 }
+
 .download-text h2 {
   font-size: 2.5em;
   font-weight: 600;
@@ -1718,12 +1805,14 @@ section,
   margin-bottom: 15px;
   color: #fff;
 }
+
 .download-text p {
   font-size: 1.1em;
   color: #d1d5db;
   margin-bottom: 30px;
   line-height: 1.6;
 }
+
 .download-buttons .btn {
   display: inline-block;
   padding: 12px 70px;
@@ -1733,28 +1822,33 @@ section,
   text-decoration: none;
   transition: transform 0.5s ease;
 }
+
 .btn-app-store {
   background-color: #ffffff;
   color: black;
   transition: transform 0.5s ease;
 }
+
 .btn-app-store:hover {
   transform: scale(1.05);
   background-color: #ffffff;
   color: #000;
   border: none;
 }
+
 .btn-google-play {
   background-color: #fff;
   color: black;
   transition: transform 0.5s ease;
 }
+
 .btn-google-play:hover {
   transform: scale(1.05);
   background-color: #ffffff;
   border: none;
   color: black;
 }
+
 @media (max-width: 767.98px) {
   .download-section {
     padding-left: 15px;
@@ -1767,12 +1861,15 @@ section,
     max-width: 200px;
     margin: 0 auto 30px;
   }
+
   .download-text h2 {
     font-size: 2em;
   }
+
   .download-text p {
     font-size: 1em;
   }
+
   .download-buttons .btn {
     display: block;
     width: 80%;
@@ -1782,7 +1879,7 @@ section,
 
 
 
- /* ================= FAQ CSS  =============== */
+/* ================= FAQ CSS  =============== */
 
 
 .faq-header {
@@ -1934,8 +2031,10 @@ section,
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgb(0, 0, 0), transparent), rgb(0, 82, 158); /* Gradient over background color */
-  z-index: -2; /* Below content and background image */
+  background: linear-gradient(to top, rgb(0, 0, 0), transparent), rgb(0, 82, 158);
+  /* Gradient over background color */
+  z-index: -2;
+  /* Below content and background image */
 }
 
 .testimonials-swiper::after {
@@ -1946,7 +2045,8 @@ section,
   background-repeat: repeat;
   background-position: center;
   background-size: 38.4px auto;
-  z-index: -1; /* Above background color/gradient, below content */
+  z-index: -1;
+  /* Above background color/gradient, below content */
   opacity: 0.05;
 }
 
@@ -2039,29 +2139,36 @@ section,
 /* Responsive Design */
 @media (max-width: 768px) {
   .testimonials-title {
-      font-size: 2rem;
+    font-size: 2rem;
   }
-  
+
   .testimonial-card {
-      padding: 2rem 1.5rem;
-      margin: 0 0.5rem;
+    padding: 2rem 1.5rem;
+    margin: 0 0.5rem;
   }
-  
+
   .swiper-button-next,
   .swiper-button-prev {
-      display: none;
+    display: none;
   }
 }
 
-
-/* Features Section  */
-.services-section {
+/* Feature Tab Content CSS  */
+.Features {
   background-color: #f8f9fa;
   padding: 5rem 0;
-  height: 600px; /* Fixed height as requested */
-  overflow: hidden; /* Prevent overflow beyond fixed height */
-  position: relative;
 }
+
+.services-section {
+  height: 1000px;
+  overflow: hidden;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
 .services-badge {
   background-color: #ffc107;
   color: #000;
@@ -2072,53 +2179,110 @@ section,
   display: inline-block;
   margin-bottom: 1.5rem;
 }
+
 .nav-tabs {
   border-bottom: none;
   justify-content: center;
   margin-bottom: 2rem;
 }
+
 .nav-link {
   color: #6c757d;
   font-weight: 500;
-  padding: 0.5rem 1.5rem;
-  border: none;
-  border-bottom: 2px solid transparent;
-  display: flex;
+  padding: 1rem 5.5rem;
+  border: none !important;
   align-items: center;
   gap: 0.5rem;
+  text-align: center;
+  /* Center the text within the tab */
+  display: flex;
+  flex-direction: column;
 }
-.nav-link.active {
+
+.nav-tabs .nav-link {
+  position: relative;
+  color: #6c757d;
+  font-weight: 500;
+  padding: 1rem 5.5rem;
+  border: none !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.nav-tabs .nav-link.active {
   color: #0d6efd;
-  border-bottom: 2px solid #0d6efd;
-  background: none;
 }
+
+.nav-tabs .nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  /* position at the bottom of the button */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  /* control the width of the bottom border */
+  height: 2px;
+  /* thin border */
+  background-color: #0d6efd;
+  border-radius: 2px;
+}
+
+.nav-link i {
+  font-size: 24px;
+}
+
+.nav-link:hover {
+  background-color: white;
+}
+
 .tab-content-section {
   background: white;
   border-radius: 15px;
   padding: 3rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-  height: 100%; /* Full height within the section */
-  
+  height: 500px;
+  /* Fixed height for the card */
+  overflow: hidden;
+  /* Clip overflow content */
+  display: flex;
+  align-items: center;
+  /* Center content vertically */
 }
+
+.tabLeft-content {
+  flex-direction: column;
+  height: 100%;
+}
+
 .tab-title {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
+
 .tab-description {
   color: #6c757d;
   font-size: 1.1rem;
   margin-bottom: 2rem;
 }
+
 .phone-mockup {
   position: relative;
   max-width: 300px;
-  margin-left: auto; /* Apply overflow hidden to the phone mockup */
+  margin-left: auto;
+  margin-top: 200px;
 }
+
 .phone-mockup img {
   width: 100%;
-  height: auto; /* Full height, adjusted by container */
+  height: 600px;
+  /* Larger height to extend beyond the card */
 }
+
 .notification {
   position: absolute;
   background: white;
@@ -2129,47 +2293,74 @@ section,
   width: 220px;
   z-index: 10;
 }
+
 .notification img {
   width: 20px;
   height: 20px;
   margin-right: 0.5rem;
 }
+
 .notification-1 {
-  top: 10%;
+  top: 5%;
   left: -50%;
   background-color: #fff3cd;
   color: #856404;
 }
+
 .notification-2 {
-  top: 35%;
+  top: 25%;
   right: -50%;
   background-color: #cce5ff;
   color: #004085;
 }
+
 .notification-3 {
-  top: 60%;
+  top: 50%;
   left: -50%;
   background-color: #d4edda;
   color: #155724;
 }
+
 @media (max-width: 768px) {
   .services-section {
-      height: auto; /* Allow auto height on mobile for responsiveness */
-      padding: 2rem 0;
+    height: auto;
+    /* Allow auto height on mobile for responsiveness */
+    padding: 2rem 0;
   }
+
+  .tab-content-section {
+    height: auto;
+    /* Allow auto height on mobile */
+    padding: 2rem;
+  }
+
   .phone-mockup {
-      margin: 2rem auto;
+    margin: 2rem auto;
   }
+
+  .phone-mockup img {
+    height: 400px;
+    /* Adjust image height for mobile */
+  }
+
   .notification {
-      width: 180px;
+    width: 180px;
   }
+
   .notification-1 {
-      left: -30%;
+    left: -30%;
   }
+
   .notification-2 {
-      right: -30%;
+    right: -30%;
   }
+
   .notification-3 {
-      left: -30%;
+    left: -30%;
+  }
+
+  .nav-link {
+    padding: 1rem 2rem;
+    /* Adjust padding for smaller screens */
   }
 }
