@@ -1,0 +1,42 @@
+/* Base: Mobile First (small screens) */
+.about{
+    padding: 80px 0px;
+}
+.feature-content {
+    padding: 10px 20px;
+  }
+  .feature-left{
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+.faq{
+    text-align: center;
+}
+  /* For Tablet Screens (min-width: 640px) */
+  @media (min-width: 640px) {
+    .feature-content {
+      padding: 60px 30px;
+    }
+    .feature-left{
+        text-align: left;
+        margin-top: 0px;
+      }
+      .faq{
+        text-align: left;
+    }
+  }
+  
+  /* For Desktop Screens (min-width: 1024px) */
+  @media (min-width: 1024px) {
+    .about{
+        padding: 120px 0px;
+    }
+    .feature-content {
+      padding: 40px 60px;
+    }
+    .feature-left{
+        text-align: left;
+      }
+  }
+  
