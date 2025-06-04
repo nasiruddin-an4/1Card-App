@@ -824,6 +824,30 @@ section,
 /*--------------------------------------------------------------
 # App Features Section
 --------------------------------------------------------------*/
+.feature-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: 0.3s ease;
+  height: 100%;
+}
+
+.feature-card .icon-placeholder {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 15px;
+  overflow: hidden;
+}
+
+.feature-card .icon-placeholder img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
 .smartSavings {
   padding: 5rem 0;
 }
@@ -1021,7 +1045,6 @@ section,
   background: #f0e6ff;
 }
 
-/* Light purple for Event & Access Management */
 
 /*--------------------------------------------------------------
 # Call To Action Section
